@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Minimalista</title>
+    <style>
+        /* Estilos minimalistas y elegantes */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #f7f9fa; 
+            color: #1a1a1a; 
+            line-height: 1.6; 
+            padding: 50px 20px; 
+            max-width: 700px; 
+            margin: 0 auto; 
+        }
+        h1 { font-size: 2.2em; margin-bottom: 5px; font-weight: 700; letter-spacing: -0.5px; }
+        h2 { font-size: 1.1em; font-weight: 400; color: #555; margin-top: 0; border-bottom: 1px solid #eaeaea; padding-bottom: 25px; margin-bottom: 40px; }
+        .experiencia { 
+            background: #ffffff; 
+            padding: 25px 30px; 
+            border-radius: 12px; 
+            border: 1px solid #eaeaea;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
+            margin-bottom: 25px; 
+            transition: transform 0.2s ease;
+        }
+        .experiencia:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.05); }
+        .puesto { font-size: 1.2em; font-weight: 600; margin: 0 0 5px 0; color: #111; }
+        .meta { color: #666; font-size: 0.9em; margin-bottom: 15px; font-weight: 500; }
+        .detalles { margin: 0; color: #444; font-size: 0.95em; }
+    </style>
+</head>
+<body>
+    <div id="header">Cargando perfil...</div>
+    <div id="experiencias"></div>
+
+    <script>
+        // Esta es la magia: Lee tu archivo JSON e inserta los datos
+        fetch('cv_data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('header').innerHTML = `
+                    <h1>${data.perfil.nombre}</h1>
+                    <h2>${data.perfil.titulo} | ${data.perfil.descripcion}</h2>
+                `;
+                
+                const expContainer = document.getElementById('experiencias');
+                data.experiencias.forEach(exp => {
+                    expContainer.innerHTML += `
+                        <div class="experiencia">
+                            <p class="puesto">${exp.puesto}</p>
+                            <p class="meta">${exp.empresa} &nbsp;•&nbsp; ${exp.fecha}</p>
+                            <p class="detalles">${exp.detalles}</p>
+                        </div>
+                    `;
+                });
+            })
+            .catch(error => console.error('Error cargando los datos:', error));
+    </script>
+</body>
+</html>
