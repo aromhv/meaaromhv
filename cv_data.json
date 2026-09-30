@@ -1,21 +1,48 @@
 {
   "perfil": {
     "nombre": "Edwin Aarom Hualtibamba Vargas",
-    "titulo": "Desarrollador de Software",
-    "descripcion": "Especialista en desarrollo móvil, automatización de procesos y mapeo de negocios."
+    "titulo": "Especialista en Procesos | Power Platform Developer",
+    "descripcion": "Especialista en la mejora y automatización de procesos de negocio (RPA) combinando análisis estratégico con desarrollo tecnológico en el ecosistema Microsoft."
   },
+  "logros": [
+    "Convertirme en docente de educación superior, logrando ayudar a otras personas a aprender y dominar el desarrollo en Power Platform.",
+    "Liderar la implementación y estructuración del área de Gestión de Procesos desde cero en el sector educativo."
+  ],
   "experiencias": [
     {
-      "puesto": "Desarrollador Mobile",
-      "empresa": "Proyecto GamarraAK",
-      "fecha": "2024 - Presente",
-      "detalles": "Desarrollo de aplicaciones móviles utilizando el framework Flutter y arquitectura backend con Firebase."
+      "puesto": "Analista de procesos de negocio",
+      "empresa": "Universidad Norbert Wiener",
+      "fecha": "feb. de 2026 - actualidad",
+      "detalles": "Análisis y mejora de procesos institucionales."
     },
     {
-      "puesto": "Analista de Procesos",
-      "empresa": "Freelance",
-      "fecha": "2023 - 2024",
-      "detalles": "Mapeo y optimización de procesos de negocio utilizando BPMN y herramientas como Jira para el seguimiento de tareas."
+      "puesto": "Docente de educación superior",
+      "empresa": "CIBERTEC",
+      "fecha": "nov. de 2025 - actualidad",
+      "detalles": "Docente especializado en el ecosistema Microsoft Power Platform, con enfoque en RPA. Imparto cursos de Cloud Flows, Desktop Flows y Process Mining mediante la metodología 'Learning by Doing'."
+    },
+    {
+      "puesto": "Analista de procesos de negocio",
+      "empresa": "CIBERTEC",
+      "fecha": "abr. de 2024 - mar. de 2025",
+      "detalles": "Proyecto Evolution: Homologación de procesos entre UPN y CIBERTEC. Optimización de flujos usando metodologías Lean y Six Sigma."
     }
+  ],
+  "proyectos": [
+    {
+      "nombre": "Automatización de Solicitudes de Calidad",
+      "cliente": "Universidad Privada del Norte (UPN)",
+      "descripcion": "Desarrollo de documentos AS IS y TO BE, diseño de BPM e implementación de notificaciones automatizadas con Power Automate Cloud."
+    },
+    {
+      "nombre": "Optimización y RPA de Procesos Internos",
+      "cliente": "Sodexo Chile / El Comercio",
+      "descripcion": "Análisis, documentación y automatización de flujos de trabajo clave utilizando Power Automate Desktop y Cloud, logrando reducir la carga manual y aumentar la productividad del cliente."
+    }
+  ],
+  "habilidades": [
+    "Microsoft Power Automate (Cloud & Desktop)",
+    "Modelado BPMN (Bizagi Modeler)",
+    "Metodologías Ágiles, Lean y Six Sigma"
   ]
 }
