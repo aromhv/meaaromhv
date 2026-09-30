@@ -383,9 +383,10 @@
         }
 
         @media (max-width: 700px) {
-            nav { justify-content: flex-start; gap: 22px; padding: 15px 64px 15px 18px; font-size: 0.75rem; }
+            nav { justify-content: flex-start; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 11px 60px 11px 16px; overflow-x: hidden; font-size: 0.72rem; white-space: normal; }
+            nav a { flex: 0 0 auto; }
             nav .theme-toggle { position: fixed; top: 7px; right: 12px; z-index: 1001; }
-            section { padding: 76px 20px; scroll-margin-top: 58px; }
+            section { padding: 76px 20px; scroll-margin-top: 76px; }
             #inicio { min-height: 88svh; padding-top: 88px; }
             .hero-photo-shell { width: 124px; }
             .hero-title { font-size: 2.5rem; line-height: 1.08; }
