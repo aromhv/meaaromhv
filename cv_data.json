@@ -1,48 +1,57 @@
 {
   "perfil": {
-    "nombre": "Edwin Aarom Hualtibamba Vargas",
-    "titulo": "Especialista en Procesos | Power Platform Developer",
-    "descripcion": "Especialista en la mejora y automatización de procesos de negocio (RPA) combinando análisis estratégico con desarrollo tecnológico en el ecosistema Microsoft."
+    "nombre": "Edwin Aarom",
+    "apellido": "Hualtibamba",
+    "titulo": "Especialista en Procesos & Power Platform Developer",
+    "descripcion": "Diseño flujos de trabajo automatizados (RPA) y arquitecturas de procesos que eliminan tareas repetitivas y optimizan la eficiencia operativa. Combino el análisis estratégico con el desarrollo tecnológico en el ecosistema Microsoft."
   },
   "logros": [
     "Convertirme en docente de educación superior, logrando ayudar a otras personas a aprender y dominar el desarrollo en Power Platform.",
     "Liderar la implementación y estructuración del área de Gestión de Procesos desde cero en el sector educativo."
   ],
+  "proyectos": [
+    {
+      "nombre": "Automatización de Calidad",
+      "cliente": "Universidad Privada del Norte",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Logo_de_la_UPN.svg/2560px-Logo_de_la_UPN.svg.png",
+      "descripcion": "Diseño de BPM e implementación de notificaciones automatizadas con Power Automate Cloud."
+    },
+    {
+      "nombre": "Optimización RPA",
+      "cliente": "Sodexo / El Comercio",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sodexo_logo.svg/1200px-Sodexo_logo.svg.png",
+      "descripcion": "Análisis y automatización de flujos de trabajo clave utilizando Power Automate Desktop y Cloud."
+    }
+  ],
   "experiencias": [
     {
       "puesto": "Analista de procesos de negocio",
       "empresa": "Universidad Norbert Wiener",
+      "logo": "https://uwiener.edu.pe/wp-content/uploads/2021/04/Logo-Wiener.png",
       "fecha": "feb. de 2026 - actualidad",
       "detalles": "Análisis y mejora de procesos institucionales."
     },
     {
       "puesto": "Docente de educación superior",
       "empresa": "CIBERTEC",
+      "logo": "https://www.cibertec.edu.pe/wp-content/uploads/2023/10/logo-cibertec.png",
       "fecha": "nov. de 2025 - actualidad",
-      "detalles": "Docente especializado en el ecosistema Microsoft Power Platform, con enfoque en RPA. Imparto cursos de Cloud Flows, Desktop Flows y Process Mining mediante la metodología 'Learning by Doing'."
+      "detalles": "Cursos de Cloud Flows, Desktop Flows y Process Mining mediante la metodología 'Learning by Doing'."
     },
     {
-      "puesto": "Analista de procesos de negocio",
+      "puesto": "Analista de procesos",
       "empresa": "CIBERTEC",
+      "logo": "https://www.cibertec.edu.pe/wp-content/uploads/2023/10/logo-cibertec.png",
       "fecha": "abr. de 2024 - mar. de 2025",
-      "detalles": "Proyecto Evolution: Homologación de procesos entre UPN y CIBERTEC. Optimización de flujos usando metodologías Lean y Six Sigma."
-    }
-  ],
-  "proyectos": [
-    {
-      "nombre": "Automatización de Solicitudes de Calidad",
-      "cliente": "Universidad Privada del Norte (UPN)",
-      "descripcion": "Desarrollo de documentos AS IS y TO BE, diseño de BPM e implementación de notificaciones automatizadas con Power Automate Cloud."
-    },
-    {
-      "nombre": "Optimización y RPA de Procesos Internos",
-      "cliente": "Sodexo Chile / El Comercio",
-      "descripcion": "Análisis, documentación y automatización de flujos de trabajo clave utilizando Power Automate Desktop y Cloud, logrando reducir la carga manual y aumentar la productividad del cliente."
+      "detalles": "Homologación de procesos entre UPN y CIBERTEC. Optimización de flujos usando metodologías Lean y Six Sigma."
     }
   ],
   "habilidades": [
-    "Microsoft Power Automate (Cloud & Desktop)",
-    "Modelado BPMN (Bizagi Modeler)",
-    "Metodologías Ágiles, Lean y Six Sigma"
+    "Power Automate",
+    "Power Apps",
+    "BPMN (Bizagi)",
+    "RPA",
+    "Lean Six Sigma",
+    "Arquitectura de Procesos"
   ]
 }
