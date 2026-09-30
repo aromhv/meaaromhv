@@ -1,57 +1,157 @@
 {
-  "perfil": {
-    "nombre": "Edwin Aarom",
-    "apellido": "HV",
-    "titulo": "Especialista en Procesos & Power Platform Developer",
-    "descripcion": "Diseño flujos de trabajo automatizados (RPA) y arquitecturas de procesos que eliminan tareas repetitivas y optimizan la eficiencia operativa. Combino el análisis estratégico con el desarrollo tecnológico en el ecosistema Microsoft."
-  },
-  "logros": [
-    "Convertirme en docente de educación superior, logrando ayudar a otras personas a aprender y dominar el desarrollo en Power Platform.",
-    "Liderar la implementación y estructuración del área de Gestión de Procesos desde cero en el sector educativo."
-  ],
-  "proyectos": [
-    {
-      "nombre": "Automatización de Calidad",
-      "cliente": "Universidad Privada del Norte",
-      "logo": "https://d30mzt1bxg5llt.cloudfront.net/public/uploads/images/LOGOTIPO_PRINCIPAL_NEGATIVO_B-N_CMYK.png",
-      "descripcion": "Diseño de BPM e implementación de notificaciones automatizadas con Power Automate Cloud."
+    "perfil": {
+        "nombre": "Edwin Aarom",
+        "apellido": "Hualtibamba Vargas",
+        "titulo": "Analista Senior de Procesos | Desarrollador Power Platform",
+        "descripcion": "Traduzco necesidades de negocio en soluciones tecnológicas low-code que reducen costos y tiempos de ejecución. Lidero iniciativas de transformación desde el levantamiento As-Is hasta la automatización To-Be, con enfoque en mejora continua, Lean y BPM."
     },
-    {
-      "nombre": "Optimización RPA",
-      "cliente": "Sodexo / El Comercio",
-      "logo": "https://pluribusglobal.com/wp-content/uploads/2021/06/11-1.png",
-      "descripcion": "Análisis y automatización de flujos de trabajo clave utilizando Power Automate Desktop y Cloud."
-    }
-  ],
-  "experiencias": [
-    {
-      "puesto": "Analista de procesos de negocio",
-      "empresa": "Universidad Norbert Wiener",
-      "logo": "https://www.uwiener.edu.pe/wp-content/uploads/2026/06/favicon.png",
-      "fecha": "feb. de 2026 - actualidad",
-      "detalles": "Análisis y mejora de procesos institucionales."
+    "contacto": {
+        "telefono": "940 104 391",
+        "email": "hv1231@outlook.es",
+        "linkedin": "https://www.linkedin.com/in/edwin-aarom-hv-9b5b241b1/"
     },
-    {
-      "puesto": "Docente de educación superior",
-      "empresa": "CIBERTEC",
-      "logo": "https://iconape.com/wp-content/files/ib/194739/png/cibertec-logo.png",
-      "fecha": "nov. de 2025 - actualidad",
-      "detalles": "Cursos de Cloud Flows, Desktop Flows y Process Mining mediante la metodología 'Learning by Doing'."
-    },
-    {
-      "puesto": "Analista de procesos",
-      "empresa": "CIBERTEC",
-      "logo": "https://iconape.com/wp-content/files/ib/194739/png/cibertec-logo.png",
-      "fecha": "abr. de 2024 - mar. de 2025",
-      "detalles": "Homologación de procesos entre UPN y CIBERTEC. Optimización de flujos usando metodologías Lean y Six Sigma."
-    }
-  ],
-  "habilidades": [
-    "Power Automate",
-    "Power Apps",
-    "BPMN (Bizagi)",
-    "RPA",
-    "Lean Six Sigma",
-    "Arquitectura de Procesos"
-  ]
+    "logros": [
+        "Reducción del 40% en los tiempos de atención de los procesos de Titulación y Servicios Académicos en Laureate Education.",
+        "Homologación de 42 macroprocesos institucionales en Cibertec.",
+        "Mejora del 70% en los tiempos de respuesta (SLA) del proceso de Exigencias de Calidad.",
+        "Reducción del 60% de la carga manual operativa en soluciones Power Apps para clientes corporativos."
+    ],
+    "proyectos": [
+        {
+            "nombre": "Optimización de Titulación y Servicios Académicos",
+            "cliente": "Laureate Education",
+            "logo": "https://cdn.prod.website-files.com/6567406fc1ef619e6df4a67e/65afd49dce09645cc8d0135e_favicon.png",
+            "descripcion": "Optimicé el ciclo de vida de los procesos de Titulación y Servicios Académicos, reduciendo en 40% los tiempos de atención y eliminando cuellos de botella. Co-gestioné el proyecto institucional Grandeza y desarrollé automatizaciones escalables para UPC, UPN y Cibertec, apoyándome en Bizagi, SharePoint y Power BI."
+        },
+        {
+            "nombre": "Homologación y Gobierno de Procesos",
+            "cliente": "Cibertec",
+            "logo": "https://cdn.cibertec.edu.pe/www/logo.svg",
+            "descripcion": "Dirigí la homologación de 42 macroprocesos institucionales para alinear la operación de Cibertec con los estándares de calidad de UPN. Estructuré el gobierno de procesos con manuales normativos, diagramas BPMN y documentación operativa, y gestioné un backlog de mejoras con metodologías ágiles."
+        },
+        {
+            "nombre": "Automatización de Exigencias de Calidad",
+            "cliente": "Métrica Andina",
+            "logo": "https://metricaandina.hiringroom.com/data/accounts/metricaandina/microsite/60ee726802a0498ea73178f066f3fa82.png",
+            "descripcion": "Transformé el proceso de Exigencias de Calidad mediante una solución híbrida con Power Automate y React TS, mejorando en 70% los tiempos de respuesta del SLA. Modelé los procesos As-Is y To-Be y rediseñé el marco BPM para facilitar la coordinación entre equipos."
+        },
+        {
+            "nombre": "Aplicaciones Power Apps para clientes corporativos",
+            "cliente": "JLR Analytics",
+            "logo": "https://static.wixstatic.com/media/c1d17a_5c81152e3d354271ae70a5929c6ed217~mv2.jpg",
+            "descripcion": "Desarrollé ecosistemas de aplicaciones en Power Apps para clientes como Sodexo Chile, El Comercio y Besco, reduciendo en 60% la carga manual operativa. También diagnostiqué brechas de operación e implementé soluciones de inteligencia de negocios y automatización."
+        }
+    ],
+    "experiencias": [
+        {
+            "puesto": "Analista de Procesos de negocio",
+            "empresa": "Universidad Norbert Wiener y Carrión",
+            "fecha": "feb. 2026 - actualidad",
+            "logo": "https://runachay2.uwiener.edu.pe/archivos/logos/logo_Wiener_vertical.png",
+            "detalles": []
+        },
+        {
+            "puesto": "Docente de educación superior",
+            "empresa": "CIBERTEC",
+            "fecha": "nov. 2025 - actualidad",
+            "logo": "https://cdn.cibertec.edu.pe/www/logo.svg",
+            "detalles": [
+                "Imparto cursos de Cloud Flows, Desktop Flows y Process Mining con la metodología Learning by Doing."
+            ]
+        },
+        {
+            "puesto": "Analista de Procesos y Digitalización (consultor por proyecto)",
+            "empresa": "Universidad Autónoma del Perú",
+            "fecha": "jul. 2025 - ene. 2026",
+            "logo": "https://www.autonoma.pe/wp-content/uploads/2023/06/logo-autonoma.svg",
+            "detalles": [
+                "Lideré la reingeniería de procesos académicos y administrativos e implementé estrategias de automatización para optimizar el flujo de información entre áreas."
+            ]
+        },
+        {
+            "puesto": "Analista de procesos de negocio - Senior (consultor por proyecto)",
+            "empresa": "Laureate Education",
+            "fecha": "abr. 2025 - jun. 2025",
+            "logo": "https://cdn.prod.website-files.com/6567406fc1ef619e6df4a67e/65afd49dce09645cc8d0135e_favicon.png",
+            "detalles": [
+                "Optimicé los procesos de Titulación y Servicios Académicos, reduciendo 40% los tiempos de atención y eliminando cuellos de botella.",
+                "Co-gestioné el proyecto institucional Grandeza junto con áreas académicas y administrativas.",
+                "Desarrollé automatizaciones escalables para UPC, UPN y Cibertec.",
+                "Utilicé Bizagi, SharePoint y Power BI para modelar procesos, gestionar información y generar reportes."
+            ]
+        },
+        {
+            "puesto": "Analista de procesos de negocio - Senior (consultor por proyecto)",
+            "empresa": "CIBERTEC",
+            "fecha": "abr. 2024 - abr. 2025",
+            "logo": "https://cdn.cibertec.edu.pe/www/logo.svg",
+            "detalles": [
+                "Dirigí la homologación de 42 macroprocesos institucionales con los estándares de calidad de UPN.",
+                "Estructuré el gobierno de procesos mediante manuales normativos y diagramas BPMN.",
+                "Documenté procesos y creé manuales y guías para fortalecer la consistencia operativa.",
+                "Gestioné y prioricé el backlog de mejoras con metodologías ágiles."
+            ]
+        },
+        {
+            "puesto": "Analista de procesos y Power Platform Developer - Senior (consultor por proyecto)",
+            "empresa": "Métrica Andina",
+            "fecha": "oct. 2023 - mar. 2024",
+            "logo": "https://metricaandina.hiringroom.com/data/accounts/metricaandina/microsite/60ee726802a0498ea73178f066f3fa82.png",
+            "detalles": [
+                "Transformé el proceso de Exigencias de Calidad con Power Automate y React TS, mejorando 70% los tiempos de respuesta del SLA.",
+                "Modelé procesos As-Is y To-Be e identifiqué oportunidades para la transformación tecnológica.",
+                "Rediseñé el marco BPM para agilizar la coordinación de equipos multidisciplinarios."
+            ]
+        },
+        {
+            "puesto": "Analista de Sistemas y Proyectos, Power Platform Developer",
+            "empresa": "JLR Analytics",
+            "fecha": "feb. 2022 - oct. 2023",
+            "logo": "https://static.wixstatic.com/media/c1d17a_5c81152e3d354271ae70a5929c6ed217~mv2.jpg",
+            "detalles": [
+                "Desarrollé aplicaciones Power Apps para Sodexo Chile, El Comercio y Besco, reduciendo 60% la carga manual operativa.",
+                "Diagnostiqué brechas y propuse soluciones de inteligencia de negocios y automatización.",
+                "Documenté procesos actuales y propuestos como base para implementar mejoras."
+            ]
+        }
+    ],
+    "habilidades": [
+        {
+            "categoria": "Automatización y Low-Code",
+            "items": [
+                "Power Apps",
+                "Power Automate",
+                "Dynamics 365",
+                "SharePoint"
+            ]
+        },
+        {
+            "categoria": "Procesos y Calidad",
+            "items": [
+                "BPMN",
+                "Bizagi",
+                "Visio",
+                "ISO 9001",
+                "ISO 27001",
+                "Six Sigma"
+            ]
+        },
+        {
+            "categoria": "Desarrollo y Datos",
+            "items": [
+                "React",
+                "Power BI",
+                "Dataverse",
+                "SQL"
+            ]
+        }
+    ],
+    "educacion": [
+        {
+            "institucion": "Universidad Tecnológica del Perú",
+            "fechas": "mar. 2018 - dic. 2023",
+            "programa": "Ingeniería de Sistemas e Informática",
+            "grado": "Bachiller"
+        }
+    ]
 }
