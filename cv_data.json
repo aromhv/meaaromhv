@@ -1,0 +1,21 @@
+{
+  "perfil": {
+    "nombre": "Edwin Aarom Hualtibamba Vargas",
+    "titulo": "Desarrollador de Software",
+    "descripcion": "Especialista en desarrollo móvil, automatización de procesos y mapeo de negocios."
+  },
+  "experiencias": [
+    {
+      "puesto": "Desarrollador Mobile",
+      "empresa": "Proyecto GamarraAK",
+      "fecha": "2024 - Presente",
+      "detalles": "Desarrollo de aplicaciones móviles utilizando el framework Flutter y arquitectura backend con Firebase."
+    },
+    {
+      "puesto": "Analista de Procesos",
+      "empresa": "Freelance",
+      "fecha": "2023 - 2024",
+      "detalles": "Mapeo y optimización de procesos de negocio utilizando BPMN y herramientas como Jira para el seguimiento de tareas."
+    }
+  ]
+}
