@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio de Edwin Aarom Hualtibamba Vargas, Analista Senior de Procesos y Desarrollador Power Platform.">
     <title>Edwin Aarom Hualtibamba Vargas | Procesos y Power Platform</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        try {
+            const savedTheme = localStorage.getItem('portfolio-theme');
+            if (savedTheme === 'light' || savedTheme === 'dark') {
+                document.documentElement.dataset.theme = savedTheme;
+            }
+        } catch {}
+    </script>
     <style>
         :root {
+            color-scheme: dark;
+            --navy: #f1f5f9;
+            --navy-light: #93c5fd;
+            --light: #0b1120;
+            --gray: #a7b2c3;
+            --accent: #5eead4;
+            --surface: #121c2d;
+            --nav-background: rgba(11, 17, 32, 0.94);
+            --border: #29364a;
+            --muted: #718096;
+            --photo-ring: #153832;
+            --photo-border: #0b1120;
+            --button-bg: #5eead4;
+            --button-text: #062723;
+            --hover-text: #062723;
+            --footer-bg: #070d18;
+            --footer-text: #f8fafc;
+            --footer-copy: #a7b2c3;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+            --shadow-hover: 0 18px 36px rgba(0, 0, 0, 0.32);
+            --logo-bg: transparent;
+        }
+
+        :root[data-theme="light"] {
+            color-scheme: light;
             --navy: #0f172a;
             --navy-light: #1e3a8a;
             --light: #f8fafc;
             --gray: #64748b;
             --accent: #0f766e;
+            --surface: #ffffff;
+            --nav-background: rgba(255, 255, 255, 0.96);
+            --border: #e2e8f0;
+            --muted: #cbd5e1;
+            --photo-ring: #dcebe7;
+            --photo-border: #ffffff;
+            --button-bg: #0f172a;
+            --button-text: #ffffff;
+            --hover-text: #ffffff;
+            --footer-bg: #0f172a;
+            --footer-text: #ffffff;
+            --footer-copy: #cbd5e1;
+            --shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+            --shadow-hover: 0 18px 36px rgba(15, 23, 42, 0.1);
+            --logo-bg: transparent;
         }
 
         html { scroll-behavior: smooth; }
@@ -23,6 +71,7 @@
             background: var(--light);
             color: var(--navy);
             font-family: 'Inter', sans-serif;
+            transition: background-color 0.25s, color 0.25s;
         }
 
         nav {
@@ -37,13 +86,14 @@
             gap: 32px;
             padding: 18px 24px;
             overflow-x: auto;
-            border-bottom: 1px solid #e2e8f0;
-            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid var(--border);
+            background: var(--nav-background);
             backdrop-filter: blur(10px);
             font-family: 'Montserrat', sans-serif;
             font-size: 0.8rem;
             font-weight: 700;
             white-space: nowrap;
+            transition: background-color 0.25s, border-color 0.25s;
         }
 
         nav a {
@@ -52,6 +102,28 @@
         }
 
         nav a:hover, nav a:focus-visible { color: var(--accent); }
+
+        .theme-toggle {
+            display: grid;
+            width: 40px;
+            height: 40px;
+            flex: 0 0 40px;
+            place-items: center;
+            padding: 0;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            background: var(--surface);
+            color: var(--navy);
+            cursor: pointer;
+            transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+        }
+
+        .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+        .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+        .theme-toggle svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+        .theme-icon-moon { display: none; }
+        :root[data-theme="light"] .theme-icon-sun { display: none; }
+        :root[data-theme="light"] .theme-icon-moon { display: block; }
 
         section {
             width: 100%;
@@ -99,13 +171,13 @@
             justify-self: end;
             padding: 10px;
             border-radius: 50%;
-            background: #dcebe7;
+            background: var(--photo-ring);
         }
 
         .hero-photo {
             width: 100%;
             height: 100%;
-            border: 3px solid white;
+            border: 3px solid var(--photo-border);
             border-radius: 50%;
             object-fit: cover;
             object-position: center 38%;
@@ -150,12 +222,12 @@
             transition: background 0.2s, color 0.2s;
         }
 
-        .action-link-primary { background: var(--navy); color: white; }
+        .action-link-primary { border-color: var(--button-bg); background: var(--button-bg); color: var(--button-text); }
 
         .action-link:hover, .action-link:focus-visible {
             border-color: var(--accent);
             background: var(--accent);
-            color: white;
+            color: var(--hover-text);
         }
 
         .scroll-down {
@@ -195,14 +267,16 @@
             position: relative;
             padding: 30px;
             border-top: 4px solid var(--navy-light);
-            background: white;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+            background: var(--surface);
+            box-shadow: var(--shadow);
             transition: transform 0.2s, box-shadow 0.2s;
+            color: var(--navy);
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.25s, color 0.25s;
         }
 
         .card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 18px 36px rgba(15, 23, 42, 0.1);
+            box-shadow: var(--shadow-hover);
         }
 
         .card-header {
@@ -217,11 +291,11 @@
             width: 48px;
             height: 48px;
             object-fit: contain;
-            background: white;
+            background: var(--logo-bg);
         }
 
         .project-number {
-            color: #cbd5e1;
+            color: var(--muted);
             font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
             font-weight: 900;
@@ -259,14 +333,14 @@
             margin-bottom: 16px;
             padding: 24px;
             border-left: 4px solid var(--navy-light);
-            background: white;
+            background: var(--surface);
             font-size: 1rem;
             line-height: 1.7;
         }
 
         .skills-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 18px; }
 
-        .skill-group { padding: 22px; background: white; }
+        .skill-group { padding: 22px; background: var(--surface); color: var(--navy); }
         .skill-category { margin: 0 0 16px; font-family: 'Montserrat', sans-serif; font-size: 1rem; }
         .skill-items { display: flex; flex-wrap: wrap; gap: 9px; }
 
@@ -288,8 +362,8 @@
         footer {
             margin-top: 40px;
             padding: 64px 20px;
-            background: var(--navy);
-            color: white;
+            background: var(--footer-bg);
+            color: var(--footer-text);
             text-align: center;
         }
 
@@ -300,7 +374,7 @@
             text-transform: uppercase;
         }
 
-        .footer-copy { margin-top: 10px; color: #cbd5e1; line-height: 1.6; }
+        .footer-copy { margin-top: 10px; color: var(--footer-copy); line-height: 1.6; }
         .btn-top { margin-top: 24px; }
 
         @media (max-width: 900px) {
@@ -309,7 +383,8 @@
         }
 
         @media (max-width: 700px) {
-            nav { justify-content: flex-start; gap: 22px; padding: 15px 18px; font-size: 0.75rem; }
+            nav { justify-content: flex-start; gap: 22px; padding: 15px 64px 15px 18px; font-size: 0.75rem; }
+            nav .theme-toggle { position: fixed; top: 7px; right: 12px; z-index: 1001; }
             section { padding: 76px 20px; scroll-margin-top: 58px; }
             #inicio { min-height: 88svh; padding-top: 88px; }
             .hero-photo-shell { width: 124px; }
@@ -343,6 +418,10 @@
         <a href="#habilidades">Habilidades</a>
         <a href="#educacion">Formación</a>
         <a href="#contacto">Contacto</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar al tema claro" title="Cambiar al tema claro" aria-pressed="true">
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 13.1A8.8 8.8 0 0 1 10.9 3.2 9 9 0 1 0 20.8 13.1Z"></path></svg>
+        </button>
     </nav>
 
     <main>
@@ -394,6 +473,28 @@
     </footer>
 
     <script>
+        const themeRoot = document.documentElement;
+        const themeToggle = document.getElementById('theme-toggle');
+
+        function setTheme(theme, savePreference = true) {
+            themeRoot.dataset.theme = theme;
+            const nextTheme = theme === 'dark' ? 'claro' : 'oscuro';
+            themeToggle.setAttribute('aria-label', `Cambiar al tema ${nextTheme}`);
+            themeToggle.setAttribute('title', `Cambiar al tema ${nextTheme}`);
+            themeToggle.setAttribute('aria-pressed', String(theme === 'dark'));
+
+            if (savePreference) {
+                try {
+                    localStorage.setItem('portfolio-theme', theme);
+                } catch {}
+            }
+        }
+
+        setTheme(themeRoot.dataset.theme, false);
+        themeToggle.addEventListener('click', () => {
+            setTheme(themeRoot.dataset.theme === 'dark' ? 'light' : 'dark');
+        });
+
         fetch('cv_data.json')
             .then(response => {
                 if (!response.ok) throw new Error('No se pudo cargar el perfil.');

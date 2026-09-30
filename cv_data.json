@@ -38,7 +38,7 @@
         {
             "nombre": "Aplicaciones Power Apps para clientes corporativos",
             "cliente": "JLR Analytics",
-            "logo": "https://static.wixstatic.com/media/c1d17a_5c81152e3d354271ae70a5929c6ed217~mv2.jpg",
+            "logo": "assets/logos/jlr-analytics.png",
             "descripcion": "Desarrollé ecosistemas de aplicaciones en Power Apps para clientes como Sodexo Chile, El Comercio y Besco, reduciendo en 60% la carga manual operativa. También diagnostiqué brechas de operación e implementé soluciones de inteligencia de negocios y automatización."
         }
     ],
@@ -107,7 +107,7 @@
             "puesto": "Analista de Sistemas y Proyectos, Power Platform Developer",
             "empresa": "JLR Analytics",
             "fecha": "feb. 2022 - oct. 2023",
-            "logo": "https://static.wixstatic.com/media/c1d17a_5c81152e3d354271ae70a5929c6ed217~mv2.jpg",
+            "logo": "assets/logos/jlr-analytics.png",
             "detalles": [
                 "Desarrollé aplicaciones Power Apps para Sodexo Chile, El Comercio y Besco, reduciendo 60% la carga manual operativa.",
                 "Diagnostiqué brechas y propuse soluciones de inteligencia de negocios y automatización.",
