@@ -191,13 +191,12 @@
             .then(response => response.json())
             .then(data => {
                 
-                // 1. Renderizar Perfil
+        // 1. Renderizar Perfil
                 document.getElementById('header-content').innerHTML = `
                     <h1 class="hero-title">${data.perfil.nombre}<br>${data.perfil.apellido}</h1>
                     <div class="hero-subtitle">${data.perfil.titulo}</div>
                     <p class="hero-desc">${data.perfil.descripcion}</p>
                 `;
-
                 // 2. Renderizar Proyectos con Números y Logos
                 const proyContainer = document.getElementById('proyectos-grid');
                 data.proyectos.forEach((proy, index) => {
